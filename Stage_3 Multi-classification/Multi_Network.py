@@ -1,6 +1,3 @@
-# It's empty. Surprise!
-# Please complete this by yourself.
-
 import torch.nn as nn
 import torch.nn.functional as F
 

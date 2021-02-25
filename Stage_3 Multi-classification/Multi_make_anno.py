@@ -1,6 +1,3 @@
-# It's empty. Surprise!
-# Please complete this by yourself.
-
 import pandas as pd
 import os
 from PIL import Image

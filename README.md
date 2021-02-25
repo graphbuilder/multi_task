@@ -1,23 +1,19 @@
-# multi_task
-
-Multi Task Research
-
+# Multi Task Research
 Research Slide:
-https://blog.csdn.net/qq_36783816/article/details/113996889
+https://blog.csdn.net/qq_36783816/article/details/114088059
 
 This folder has all 3 stages of the project classifications.
 
 FIRST TWO STAGES:
 
 What I have done
-1) Commented out the visualization part of The original codes 
-2) Did grid search on Network (original network provided, with one more convolution layer, with batchnormalization) lr, optimization method(SGD,Adam), regulerization. The results are saved in jpg
-3) The softmax is removed from the original Net classes, since CrossEntropyLoss contains softmax already.
-4) All tests are run with 20 epoches. I only have cpu, so every run takes a while.
-5) I didn't include lr adjustment for I am testing the effect of lr on the final result.
+1) Did research on Network lr, optimization method(SGD,Adam), regulerization. The results are saved in jpg
+2) The softmax is removed, since CrossEntropyLoss contains softmax already.
+3) All tests are run with 20 epoches.
+4) I didn't include lr adjustment for I am testing the effect of lr on the final result.
 
 What I have found:
-1) seems regularization is best at 0 (i.e. no regularization), maybe because the dropout layer is sufficient. You can see this finding by opening all the pdfs with lam=0.1 or lam=1.0
+1) Seems regularization is best at 0 (i.e. no regularization), maybe because the dropout layer is sufficient. You can see this finding by opening all the pdfs with lam=0.1 or lam=1.0
 2) For SGD, lr=1.0 is too large. Seems lr=0.01 is doing just fine in both the classes and species classifications. There might be a slight advantage of using normalization layer, as it helps converging, but only very slightly.
 3) For Adam, there may be some advantages using lr=0.001, but not obvious. Does this mean Adam is not too sensitive to lr?
 4) Both SGD and Adam give similar result at the end.
