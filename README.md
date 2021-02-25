@@ -1,10 +1,10 @@
 # Multi Task Research
-Research Slide:
+Research & Slide:
 https://blog.csdn.net/qq_36783816/article/details/114088059
 
 This folder has all 3 stages of the project classifications.
 
-FIRST TWO STAGES:
+## FIRST TWO STAGES:
 
 What I have done
 1) Did research on Network lr, optimization method(SGD,Adam), regulerization. The results are saved in jpg
@@ -19,7 +19,7 @@ What I have found:
 4) Both SGD and Adam give similar result at the end.
 
 
-STAGE 3:
+## STAGE 3:
 What I have done
 1) Done all the coding from scratch. The Net is essentially the original net in Stage 1.
 2) Performed two types of minimization, one with loss=loss1+loss2*wt, with wt=1.0 and 1.5 (loss1 is for classes and loss2 is for species). The other one will try num_epoches1 first to minimize loss2, then try to minimize loss1
@@ -29,5 +29,5 @@ What I have found:
 2) No matter which type of minimization I use, it get to about 50% accurary for species and about 70% for classes, the two stage type might be slightly better.
 
 
-Extra:
+## Extra:
 It is actually not that intuitive for doing the two stages minimization as freezing parameter is not that straightforward. The testgrad.py shows that the pitfall is the momentum buffer cannot be easily cleared. 
