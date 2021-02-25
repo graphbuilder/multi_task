@@ -2,7 +2,7 @@
 
 Multi Task Research
 
-Test Blog:
+Research Slide:
 https://blog.csdn.net/qq_36783816/article/details/113996889
 
 This folder has all 3 stages of the project classifications.
